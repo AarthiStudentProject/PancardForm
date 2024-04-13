@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Card App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="top">
+        <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" class="logo">
+        
+        <img src="https://www.pancardapp.com/assets/img/logo.png?v=20190406" class="logo2">
+    
+    </div>
+    <br>
+    <h1 class="title1">New PAN Card Application Form</h1>
+    <!-- session-1 -->
+    <div class="session1">
+        <p class="first">APPLICANT NAME DETAIL</p>
+        <p class="second">Name as given in Aadhaar Card</p>
+        <input type="text" placeholder="Enter your Full Name here" class="t1">
+        <table>
+            <tr>
+                <td><p class="second">Surname / Last Name</p></td>
+                <td><p class="second">First Name</p></td>
+                <td><p class="second">Middle Name<span class="small">[Father or Husband name]</span> </p></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="t2" placeholder="Enter your First Name" style="margin-left: 10px;"></td>
+                <td><input type="text" class="t2" placeholder="Enter your Middle Name"></td>
+                <td><input type="text" class="t2" placeholder="Enter your Father or Husband name"></td>
+            </tr>
+        </table>
+        <br>                        
+        <p class="second">Name Identity Proof</p>
+        <select class="t1">
+            <option>Select Name identity Proof</option>
+            <option>Adhar card</option>
+        </select>
+    </div>
+    <br>
+    <!-- session-2 -->
+    <div class="session2">
+        <p class="first">FATHER'S NAME DETAIL</p>
+        <table>
+            <tr>
+                <td><p class="second">Surname / Last Name</p></td>
+                <td><p class="second">First Name</p></td>
+                <td><p class="second">Middle Name<span class="small"> </p></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="t2" placeholder="Enter your Name here" style="margin-left: 10px;"></td>
+                <td><input type="text" class="t2" placeholder="Enter your Name here"></td>
+                <td><input type="text" class="t2" placeholder="Enter your Name here"></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <br>
+    <!-- session-3 -->
+    <div class="session3">
+        <p class="second">Applicant's Date Of Birth</p>
+        <table class="t3">
+            <tr>
+                <td><label for="dd">DD</label></td>
+                <td><label for="mm" class="lb">MM</label></td>
+                <td><label for="yy" class="lb">YYYY</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="t4">
+                        <option>Date</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="t5">
+                        <option>Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="t6">
+                        <option>Year</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                     </select>  
+                </td>
+            </tr>
+        </table>
+        <br>                        
+        <p class="second">Date Of Birth Proof</p>
+        <select class="t1">
+            <option>Select Date Of Birth Proof</option>
+            <option>Adhar card</option>
+            <option>Election Card / Voter ID</option>
+            <option>Driving License</option>
+            <option>Passport</option>
+        </select>
+    </div>
+    <br>
+    <!-- session-4 -->
+    <div class="session4">
+        <p class="second">Address Proof *</p>
+        <select class="t1">
+            <option>Select Date Of Birth Proof</option>
+            <option>Adhar card</option>
+            <option>Election Card / Voter ID</option>
+            <option>Driving License</option>
+            <option>Passport</option>
+        </select>
+        <p class="txt">* PAN Card will be sent in courier as per Address Proof.</p><br>
+        <p class="second">Mobile Number</p>
+        <input type="text" placeholder="+91" class="ph"> 
+        <input type="tel" id="phone" maxlength="10" name="phone"  placeholder="Enter your Mobile number here"  pattern="[0-9]{3}-[0-9]{4}"required/>
+        <br>
+        <p class="second">Email ID</p>
+        <input type="mailto" placeholder="Enter your ID here" class="t1">
+    </div>
+    <br>
+    <button id="submitComment" class="btn">Submit</button>
+    <script src="script.js"></script>
+</body>
+</html>
